@@ -104,7 +104,7 @@ img {
     <p>This dataset contains 12 different types of seedlings as shown below.</p>
     <img src="pictures/kaggle_plants/all_plants.png" alt="All plant species images" style="width:70%">
     
-    <img src="pictures/kaggle_plants/train_images_counts.png" alt="Train image counts" style ="width:300px;padding-left: 30px;">
+    <img src="pictures/kaggle_plants/train_images_counts.PNG" alt="Train image counts" style ="width:300px;padding-left: 30px;">
 
     <p>Right off the bat, many of the seedlings look fairly distinct, which should make any decent classification model work. Black-grass and Loose Silky-bent are maybe the two that might get misclassed the most (spoiler, they do) based on the shape of the plants alone. But, as humans, we can see that Black-grass is significantly smaller based on the zoomed up rocks. So that observation should be noted when optimizing a model.</p> 
     <p>We can see that some species are more highly represented than others. This may pose a potential problems like bias towards the over-represented classes and not learning under-represented classes. This should be considered when training the model.</p>
@@ -138,9 +138,9 @@ vertical_flip=True
     <p>As with most image classification, CNN is generally the first go-to model. There are plenty of great articles and blogs explaining CNN, so I will not be going over it here. I will note that the model is built with 9 CNN layers and two dense layers, with batch normalization and LeakyReLU utilized for stabilizing and assisting in prevention of overfitting. Stochastic Gradient Descent (SGD) was used for optimization. 30 epochs of batch size 15 were used. The classes were not balanced (yet) to see the performance of a benchmark model.</p>
     <p>To validate the efficacy of the model, 80% of each training plant species were used for training, and 20% of each species was set aside as a validation set. This is necessary to verify the model is not overfitting to the training data.</p>
     <p>The epoch progression was recorded with training and validation accuracy and loss shown.</p>
-    <img src="pictures/kaggle_plants/cnn_epoch_summ.png" alt="Epoch summary" >
+    <img src="pictures/kaggle_plants/cnn_epoch_summ.PNG" alt="Epoch summary" >
     <p>The heatmap of the results from predicting on the validation set is shown here (Validation accuracy = 95.79%) :</p>
-    <img src="pictures/kaggle_plants/heatmap_CNN.png" alt="Heatmap" >
+    <img src="pictures/kaggle_plants/heatmap_CNN.PNG" alt="Heatmap" >
 
   </div>
   
