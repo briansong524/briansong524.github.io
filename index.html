@@ -193,10 +193,35 @@ a.infolink:hover, a.infolink:active {
       <!-- Work Experience -->
       <div class="w3-container w3-card w3-white w3-margin-bottom tabcontent" id="work">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
+
+        <!--For Current timestamp: <span class="w3-tag w3-blue-grey w3-round">Current</span>-->
+        <!-- HopSkipDrive-->
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Data Scientist</b></h5>
+          <h6 class="w3-text-blue-grey">HopSkipDrive, Los Angeles, CA</h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2019 - Aug 2020</h6>
+          <ul>
+            <li>Created an automated solution to detect when a trip is determined to be unlikely to get claimed</li>
+            <ul>
+              <li class="small_margin"> Designed a formula to determine the likelihood a scheduled ride would get claimed by a driver to take on</li>
+              <li class="small_margin"> Determined a weighted supply and demand measurement based on geographic level of drivers relative to the trip route</li>
+              <li class="small_margin"> Reduced the need to manual check thousands of daily trips to just a few that require attention</li>
+            </ul>
+            <li>Provided a solution for reducing cost of bonusing trips to make it more appealing to drivers</li>
+            <ul> 
+              <li class="small_margin">Updated an unoptimized automated bonusing system previously set in place</li>
+              <li class="small_margin">Trained a tree based model to predict the value of a trip at a given time and supply and demand ratio</li>
+              <li class="small_margin">Estimated to save on average 9% of the cost as a first iteration prior to implementing more invasive models</li>
+            </ul>
+          </ul>
+          <hr>
+        </div>
+
+        <!--Internet Brands-->
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Associate Data Scientist</b></h5>
           <h6 class="w3-text-blue-grey">Internet Brands, El Segundo, CA</h6>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2017 - <span class="w3-tag w3-blue-grey w3-round">Current</span></h6>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2017 - Nov 2019</h6>
           <ul>
             <li>Applied random forest model to estimate the price of a used car listing to match competing websites</li>
             <ul>
@@ -212,10 +237,12 @@ a.infolink:hover, a.infolink:active {
               <li class="small_margin">Reduced preprocessing time from hours to a couple minutes and memory use by half through code optimization</li>
               <li class="small_margin">Improved site traffic by 15% based on increased click-through rate</li>
             </ul>
-            <li>Designed an LSI model to match forum threads to articles of a website to improve page views on low traffic pages</li>
+            <li>Utilized Salesforce data and PostgreSQL website data to analyze customer churn</li>
             <ul>
-              <li class="small_margin">Researched multiple Natural Language Processes (NLP) libraries such as NLTK, CoreNLP, and TwitterNLP to determine optimal preprocessing steps for informal text</li>
-              <li class="small_margin">Deployed the LSI model on a Flask server to easily share with the product team for quality assurance</li>
+              <li class="small_margin">Produced tree-based and survival models to compare and decide on the best representation of customer behavior</li>
+              <li class="small_margin">Performed deeper analysis on significant features and documented findings that may cause customer churn</li>
+              <li class="small_margin">Developed a proof of concept to demonstrate changing certain customer features reducing churn likelihood</li>
+              <li class="small_margin">Provided business team ordered list of at-risk customers with recommendations to best remediate churn</li>
             </ul>
           </ul>
           <hr>
@@ -291,11 +318,26 @@ a.infolink:hover, a.infolink:active {
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Projects</h2>
         <hr>
         <div class="w3-container">
-          <h4 class="w3-opacity"><b>Thesis</b></h4>
-          <h5 class="w3-text-blue-grey">A Comprehensive Risk Stratification Model for Prognostication and Assisting with Therapeutic Decision-Making for Multiple Myeloma Patients</h5>
-          <a class="w3-tag w3-round art_repo" href="/pdf/Brian_Song_Thesis.pdf">Article</a>
-          <p>Thesis under Dr. Hojin Moon</p>
+          <h4 class="w3-opacity"><b>Publications</b></h4>
+            <!-- Thesis -->
+            <h5 class="w3-text-blue-grey">A Comprehensive Risk Stratification Model for Prognostication and Assisting with Therapeutic Decision-Making for Multiple Myeloma Patients</h5>
+            <a class="w3-tag w3-round art_repo" href="/pdf/Brian_Song_Thesis.pdf">Article</a>
+            <p>Thesis under Dr. Hojin Moon</p>
+            <p>Song, B. (2018). ”A Comprehensive Risk Stratification Model for Prognostication and Assisting with Therapeutic Decision-Making for Multiple Myeloma Patients”. <i>ProQuest</i></p>
+            
+            <!-- disability student research -->
+            <h5 class="w3-text-blue-grey">Quantifying Difficulties of University Students with Disabilities</h5>
+            <a class="w3-tag w3-round art_repo" href="/pdf/CSUDisabilitiesSummaryReport.pdf">Article</a>
+            <p>Research under Dr. Alan Safer and Dr. Lesley Farmer</p>
+            <p>Safer, A. Farmer, L. and Song B. (In Press). ”Quantifying Difficulties of University Students with Disabilities”. <i>Journal of Postsecondary Disability and Education</i></p>
+
+            <!-- student t test --> 
+            <h5 class="w3-text-blue-grey">A Comprehensive Risk Stratification Model for Prognostication and Assisting with Therapeutic Decision-Making for Multiple Myeloma Patients</h5>
+            <a class="w3-tag w3-round art_repo" href="/pdf/Brian_Song_Thesis.pdf">Article</a>
+            <p>Thesis under Dr. Hojin Moon</p>
+            <p>Korosteleva, O. and Song, B. (2018). "The Students T-tests". <i>The SAGE Encyclopedia of Educational Research, Measurement, and Evaluation</i>, edited by Bruce Frey, SAGE Publishing, Inc.</p>
           <hr>
+
         </div>
         <div class="w3-container">
           <h4 class="w3-opacity"><b>Kaggle</b></h4>
